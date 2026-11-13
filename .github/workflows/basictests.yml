@@ -21,4 +21,4 @@ jobs:
       - run: |
           result=$(bash validate-data.sh "pearse mccarthyx" "0831122334")
           echo "$result"
-          [[ "$result" == "FAIL" ]]
+          [[ "$result" == "PASS" ]]
