@@ -1,0 +1,72 @@
+  504  mkdir week9
+  505  cd week9
+  506  git clone https://github.com/X00223781-Kevin/lab9.git
+  507  cdd lab9/
+  508  cd lab9/
+  509  echo validate-date.sh
+  510  nano validate-date.sh
+  511  bash validate-date.sh 
+  512  bash validate-date.sh "Kevin" "0000" 
+  513  bash validate-date.sh "Kevin" "00000000000" 
+  514  bash validate-date.sh "Kevin" "0000000000000" 
+  515  bash validate-date.sh "Kevin" "00000000000" 
+  516  bash validate-date.sh 
+  517  nano validate-date.sh
+  518  bash validate-date.sh "Kevin" "0000000000000" 
+  519  bash validate-date.sh "Kevin" "0000000"
+  520  bash validate-date.sh "Kevindddd" "0000000"
+  521  bash validate-date.sh "Kevindddddd" "0000000"
+  522  bash validate-date.sh "Kevindddddddddddd" "0000000"
+  523  git add .
+  524  git status
+  525  git commit -m "Fixes #2"
+  526  rm validate-date.sh validate-data.sh
+  527  ls
+  528  git restore validate-date.sh
+  529  ls
+  530  mv validate-date.sh validate-data.sh
+  531  ls
+  532  git add .
+  533  git status
+  534  git commit -m "changed name"
+  535  ls -la
+  536  mkdir -help
+  537  mkdir --help
+  538  mkdir .github
+  539  ls .github/
+  540  mkdir workflows
+  541  ls workflows/
+  542  rm workflows
+  543  rd workflows
+  544  rmdir workflows
+  545  ls
+  546  ls -a
+  547  cd .github/
+  548  mkdir workflows
+  549  cd workflows/
+  550  nano basictests.yml 
+  551  cd ../..
+  552  ls
+  553  git add .
+  554  git status
+  555  git -m "Fixes #3"
+  556  git commit -m "Fixes #3"
+  557  git push
+  558  ls
+  559  git status
+  560  ls
+  561  git checkout -b test
+  562  ls
+  563  nano validate-data.sh 
+  564  git add .
+  565  git commit -m "updated name length to 20"
+  566  git push
+  567  cd .gith`
+  568  cd .github/
+  569  cd workflows/
+  570  nano basictests.yml 
+  571  cd ../..
+  572  git add .
+  573  git commit -m "updated test script"
+  574  git push
+  575  history > history.txt
