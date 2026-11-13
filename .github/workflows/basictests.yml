@@ -1,0 +1,24 @@
+name: Basic Tests
+
+on: push
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: |
+          result=$(bash validate-data.sh "pearse mccarthy" "0831122334")
+          echo "$result"
+          [[ "$result" == "PASS" ]]
+
+      - run: |
+          result=$(bash validate-data.sh "pearse mccarthy" "08311223344")
+          echo "$result"
+          [[ "$result" == "FAIL" ]]
+
+      - run: |
+          result=$(bash validate-data.sh "pearse mccarthyx" "0831122334")
+          echo "$result"
+          [[ "$result" == "FAIL" ]]
